@@ -1,0 +1,61 @@
+/**
+ * Copyright 2018 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * https://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+inst-viewer {
+  background-color: lightblue;
+  margin: 5px;
+}
+inst-viewer::ng-deep gdf-prop-viewer {
+  min-width: 100px;
+  margin: 5px 10px 5px 0px;
+}
+
+span.propname {
+  min-width:100px;
+  margin: 5px 10px 5px 0px;
+
+}
+inst-viewer::ng-deep gdf-prop-viewer.description, span.propname.description {
+  width: 300px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+div.book {
+  display: flex;
+}
+div.book.head {
+  margin: 5px;
+}
+
+th, td {
+  border: 1px solid black;
+}
+th, td {
+  padding: 0px 5px 0px 5px;
+}
+
+
+section.bookgrid {
+  display: grid;
+  grid-template-columns: 1fr 2fr repeat(6, 1fr);
+}
+section.bookgrid > div {
+  border: 2px solid #ffa94d;
+}
+section.bookgrid > div.propname {
+  font-weight: bold;
+}
